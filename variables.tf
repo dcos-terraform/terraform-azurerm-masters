@@ -46,7 +46,9 @@ variable "network_security_group_id" {
 }
 
 # Customer Provided Userdata
-variable "user_data" {}
+variable "user_data" {
+  default = ""
+}
 
 # SSH User
 variable "admin_username" {}
