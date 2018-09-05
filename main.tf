@@ -16,7 +16,7 @@ module "master-nsg" {
 }
 
 module "master-lb" {
-  source  = "dcos-terraform/nsg/azurerm"
+  source  = "dcos-terraform/lb/azurerm"
   version = "~> 0.0"
 
   providers = {
