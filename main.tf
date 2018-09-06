@@ -29,6 +29,7 @@ module "master-lb" {
   tags                      = "${var.tags}"
   name_prefix               = "${var.name_prefix}"
   network_security_group_id = "${module.master-nsg.nsg_name}"
+  subnet_id                 = "${var.subnet_id}"
 }
 
 module "dcos-master-instances" {
