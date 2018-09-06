@@ -28,7 +28,7 @@ module "master-lb" {
   resource_group_name       = "${var.resource_group_name}"
   tags                      = "${var.tags}"
   name_prefix               = "${var.name_prefix}"
-  network_security_group_id = "${var.network_security_group_id}"
+  network_security_group_id = "${module.master-nsg.nsg_name}"
 }
 
 module "dcos-master-instances" {
@@ -50,7 +50,7 @@ module "dcos-master-instances" {
   disk_type                = "${var.disk_type}"
   disk_size                = "${var.disk_size}"
   resource_group_name      = "${var.resource_group_name}"
-  network_instance_id      = "${var.network_security_group_id}"
+  network_instance_id      = "${module.master-nsg.nsg_name}"
   user_data                = "${var.user_data}"
   admin_username           = "${var.admin_username}"
   public_ssh_key           = "${var.public_ssh_key}"
