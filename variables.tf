@@ -71,3 +71,6 @@ variable "tags" {
 variable "hostname_format" {
   default = "instance-%[1]d-%[2]s"
 }
+
+# Subnet ID
+variable "subnet_id" {}
