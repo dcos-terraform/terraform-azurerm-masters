@@ -48,11 +48,6 @@ output "user_data" {
   value = "${var.user_data}"
 }
 
-# Network Instance ID
-output "network_security_group_id" {
-  value = "${var.network_security_group_id}"
-}
-
 # SSH User
 output "admin_username" {
   value = "${module.dcos-master-instances.admin_username}"
