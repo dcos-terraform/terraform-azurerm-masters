@@ -58,8 +58,8 @@ variable "allow_stopping_for_update" {
 
 # Add special tags to the resources created by this module
 variable "tags" {
-  type        = "map"
-  default     = {}
+  type    = "map"
+  default = {}
 }
 
 # Format the hostname inputs are index+1, region, name_prefix
