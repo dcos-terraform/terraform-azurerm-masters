@@ -64,7 +64,7 @@ variable "tags" {
 
 # Format the hostname inputs are index+1, region, name_prefix
 variable "hostname_format" {
-  default = "instance-%[1]d-%[2]s"
+  default = "master-%[1]d-%[2]s"
 }
 
 # Subnet ID
