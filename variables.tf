@@ -40,11 +40,6 @@ variable "disk_size" {}
 # Resource Group Name
 variable "resource_group_name" {}
 
-# Network Instance IDs
-variable "network_security_group_id" {
-  type = "list"
-}
-
 # Customer Provided Userdata
 variable "user_data" {
   default = ""
