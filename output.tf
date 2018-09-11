@@ -67,3 +67,8 @@ output "private_ips" {
 output "public_ips" {
   value = ["${module.dcos-master-instances.public_ips}"]
 }
+
+# Master Load Balancer Address
+output "lb.fqdn" {
+  value = "${module.master-lb.elb_address}"
+}
