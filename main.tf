@@ -23,12 +23,12 @@ module "master-lb" {
     azurerm = "azurerm"
   }
 
-  dcos_role                 = "master"
-  location                  = "${var.location}"
-  resource_group_name       = "${var.resource_group_name}"
-  tags                      = "${var.tags}"
-  name_prefix               = "${var.name_prefix}"
-  subnet_id                 = "${var.subnet_id}"
+  dcos_role           = "master"
+  location            = "${var.location}"
+  resource_group_name = "${var.resource_group_name}"
+  tags                = "${var.tags}"
+  name_prefix         = "${var.name_prefix}"
+  subnet_id           = "${var.subnet_id}"
 }
 
 module "dcos-master-instances" {

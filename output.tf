@@ -72,3 +72,8 @@ output "public_ips" {
 output "lb.fqdn" {
   value = "${module.master-lb.elb_address}"
 }
+
+# Returns the ID of the prereq script
+output "prereq_id" {
+  value = "${module.dcos-bootstrap-instances.prereq_id}"
+}
