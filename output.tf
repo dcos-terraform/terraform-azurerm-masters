@@ -75,5 +75,5 @@ output "lb.fqdn" {
 
 # Returns the ID of the prereq script
 output "prereq_id" {
-  value = "${module.dcos-bootstrap-instances.prereq_id}"
+  value = "${module.dcos-master-instances.prereq_id}"
 }
