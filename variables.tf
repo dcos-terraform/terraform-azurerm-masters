@@ -46,7 +46,7 @@ variable "image" {
 
 # Disk Type to Leverage. The managed disk type. (optional)
 variable "disk_type" {
-  description = "disk type"
+  description = "Disk Type to Leverage."
   default = "Standard_LRS"
 }
 
