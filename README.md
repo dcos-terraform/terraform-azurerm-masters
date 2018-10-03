@@ -1,5 +1,28 @@
 [![Build Status](https://jenkins-terraform.mesosphere.com/service/dcos-terraform-jenkins/job/dcos-terraform/job/terraform-azurerm-masters/job/master/badge/icon)](https://jenkins-terraform.mesosphere.com/service/dcos-terraform-jenkins/job/dcos-terraform/job/terraform-azurerm-masters/job/master/)
 
+Azure DC/OS Master Instances
+============
+This module creates typical master instances used by DC/OS
+
+EXAMPLE
+-------
+
+```hcl
+module "dcos-master-instances" {
+  source  = "dcos-terraform/masters/azurerm"
+  version = "~> 0.1"
+
+  admin_username = "admin"
+  cluster_name = "production"
+  subnet_ids = "string-myid"
+  resource_group_name = "example"
+  public_ssh_key = "my-ssh-key"
+
+  num_masters = "3"
+}
+```
+
+
 
 ## Inputs
 
