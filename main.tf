@@ -26,22 +26,6 @@
 
 provider "azurerm" {}
 
-module "master-lb" {
-  source  = "dcos-terraform/lb/azurerm"
-  version = "~> 0.0"
-
-  providers = {
-    azurerm = "azurerm"
-  }
-
-  dcos_role           = "master"
-  location            = "${var.location}"
-  resource_group_name = "${var.resource_group_name}"
-  tags                = "${var.tags}"
-  name_prefix         = "${var.name_prefix}"
-  subnet_id           = "${var.subnet_id}"
-}
-
 module "dcos-master-instances" {
   source  = "dcos-terraform/instance/azurerm"
   version = "~> 0.0"
@@ -67,7 +51,7 @@ module "dcos-master-instances" {
   public_ssh_key               = "${var.public_ssh_key}"
   tags                         = "${var.tags}"
   hostname_format              = "${var.hostname_format}"
-  private_backend_address_pool = ["${module.master-lb.private_backend_address_pool}"]
-  public_backend_address_pool  = ["${module.master-lb.public_backend_address_pool}"]
+  private_backend_address_pool = ["${var.private_backend_address_pool}"]
+  public_backend_address_pool  = ["${var.public_backend_address_pool}"]
   subnet_id                    = "${var.subnet_id}"
 }
