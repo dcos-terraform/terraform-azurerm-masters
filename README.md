@@ -1,9 +1,11 @@
 [![Build Status](https://jenkins-terraform.mesosphere.com/service/dcos-terraform-jenkins/job/dcos-terraform/job/terraform-azurerm-masters/job/master/badge/icon)](https://jenkins-terraform.mesosphere.com/service/dcos-terraform-jenkins/job/dcos-terraform/job/terraform-azurerm-masters/job/master/)
 
-# Azure DC/OS Master Instances
+Azure DC/OS Master Instances
+============================
 This module creates typical master instances used by DC/OS
 
-## EXAMPLE
+EXAMPLE
+-------
 
 ```hcl
 module "dcos-master-instances" {
@@ -20,6 +22,7 @@ module "dcos-master-instances" {
 }
 ```
 
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -35,6 +38,7 @@ module "dcos-master-instances" {
 | instance_type | instance type | string | - | yes |
 | location | location | string | - | yes |
 | name_prefix | Cluster Name | string | - | yes |
+| network_security_group_id | network security group id | string | `` | no |
 | num_masters | Specify the amount of masters. For redundancy you should have at least 3 | string | - | yes |
 | public_ssh_key | public ssh key | string | - | yes |
 | resource_group_name | resource group name | string | - | yes |

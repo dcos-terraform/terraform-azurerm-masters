@@ -100,3 +100,8 @@ variable "hostname_format" {
 variable "subnet_id" {
   description = "Subnet ID"
 }
+
+variable "network_security_group_id" {
+  description = "network security group id"
+  default     = ""
+}

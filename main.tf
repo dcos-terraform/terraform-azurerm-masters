@@ -1,23 +1,30 @@
 /**
  * [![Build Status](https://jenkins-terraform.mesosphere.com/service/dcos-terraform-jenkins/job/dcos-terraform/job/terraform-azurerm-masters/job/master/badge/icon)](https://jenkins-terraform.mesosphere.com/service/dcos-terraform-jenkins/job/dcos-terraform/job/terraform-azurerm-masters/job/master/)
+
+ * Azure DC/OS Master Instances
+ * ============================
+ * This module creates typical master instances used by DC/OS
+ *
+ * EXAMPLE
+ * -------
+ *
+ *```hcl
+ * module "dcos-master-instances" {
+ *   source  = "dcos-terraform/masters/azurerm"
+ *   version = "~> 0.1"
+ *
+ *   admin_username = "admin"
+ *   cluster_name = "production"
+ *   subnet_ids = "string-myid"
+ *   resource_group_name = "example"
+ *   public_ssh_key = "my-ssh-key"
+ *
+ *   num_masters = "3"
+ * }
+ *```
  */
 
 provider "azurerm" {}
-
-module "master-nsg" {
-  source  = "dcos-terraform/nsg/azurerm"
-  version = "~> 0.0"
-
-  providers = {
-    azurerm = "azurerm"
-  }
-
-  dcos_role           = "master"
-  location            = "${var.location}"
-  resource_group_name = "${var.resource_group_name}"
-  tags                = "${var.tags}"
-  name_prefix         = "${var.name_prefix}"
-}
 
 module "master-lb" {
   source  = "dcos-terraform/lb/azurerm"
@@ -54,7 +61,7 @@ module "dcos-master-instances" {
   disk_type                    = "${var.disk_type}"
   disk_size                    = "${var.disk_size}"
   resource_group_name          = "${var.resource_group_name}"
-  network_security_group_id    = "${module.master-nsg.nsg_id}"
+  network_security_group_id    = "${var.network_security_group_id}"
   user_data                    = "${var.user_data}"
   admin_username               = "${var.admin_username}"
   public_ssh_key               = "${var.public_ssh_key}"
