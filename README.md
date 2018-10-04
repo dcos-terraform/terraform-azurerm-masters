@@ -40,6 +40,8 @@ module "dcos-master-instances" {
 | name_prefix | Cluster Name | string | - | yes |
 | network_security_group_id | network security group id | string | `` | no |
 | num_masters | Specify the amount of masters. For redundancy you should have at least 3 | string | - | yes |
+| private_backend_address_pool | private backend address pool | list | `<list>` | no |
+| public_backend_address_pool | public backend address pool | list | `<list>` | no |
 | public_ssh_key | public ssh key | string | - | yes |
 | resource_group_name | resource group name | string | - | yes |
 | ssh_private_key_filename | Path to the SSH private key | string | `/dev/null` | no |
