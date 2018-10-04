@@ -1,11 +1,9 @@
 [![Build Status](https://jenkins-terraform.mesosphere.com/service/dcos-terraform-jenkins/job/dcos-terraform/job/terraform-azurerm-masters/job/master/badge/icon)](https://jenkins-terraform.mesosphere.com/service/dcos-terraform-jenkins/job/dcos-terraform/job/terraform-azurerm-masters/job/master/)
 
-Azure DC/OS Master Instances
-============
+# Azure DC/OS Master Instances
 This module creates typical master instances used by DC/OS
 
-EXAMPLE
--------
+## EXAMPLE
 
 ```hcl
 module "dcos-master-instances" {
@@ -21,8 +19,6 @@ module "dcos-master-instances" {
   num_masters = "3"
 }
 ```
-
-
 
 ## Inputs
 
