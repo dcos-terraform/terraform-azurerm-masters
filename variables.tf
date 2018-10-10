@@ -42,7 +42,9 @@ variable "ssh_private_key_filename" {
 
 # Source image to boot from. We assume the user has already take care of the prereq during this step.
 variable "image" {
-  description = "image"
+  description = "A storage_image_reference reference."
+  type        = "map"
+  default     = {}
 }
 
 # Disk Type to Leverage. The managed disk type. (optional)

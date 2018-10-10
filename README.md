@@ -34,7 +34,7 @@ module "dcos-master-instances" {
 | disk_size | disk size | string | - | yes |
 | disk_type | Disk Type to Leverage. | string | `Standard_LRS` | no |
 | hostname_format | Format the hostname inputs are index+1, region, cluster_name | string | `master-%[1]d-%[2]s` | no |
-| image | image | string | - | yes |
+| image | A storage_image_reference reference. | map | `<map>` | no |
 | instance_type | instance type | string | - | yes |
 | location | location | string | - | yes |
 | name_prefix | Cluster Name | string | - | yes |
@@ -53,20 +53,8 @@ module "dcos-master-instances" {
 
 | Name | Description |
 |------|-------------|
-| admin_username | SSH User |
-| dcos_instance_os | Tested OSes to install with prereq |
-| dcos_version | DCOS Version for prereq install |
-| disk_size | Disk Size in GB |
-| disk_type | Disk Type to Leverage |
-| image | Source image to boot from |
-| instance_type | Instance Type |
-| lb.fqdn | Master Load Balancer Address |
-| name_prefix | Cluster Name |
-| num_masters | Number of Instance |
-| prereq_id | Returns the ID of the prereq script |
-| private_ips | Private IP Addresses |
-| public_ips | Public IP Addresses |
-| public_ssh_key | SSH Public Key |
-| resource_group_name | Resource Group Name |
-| user_data | Customer Provided Userdata |
+| admin_username | admin username |
+| prereq_id | prereq id |
+| private_ips | List of private ip addresses created by this module |
+| public_ips | List of public ip addresses created by this module |
 
