@@ -64,7 +64,7 @@ variable "resource_group_name" {
 }
 
 # Customer Provided Userdata
-variable "user_data" {
+variable "custom_data" {
   description = "User data to be used on these instances (cloud-init)"
   default     = ""
 }

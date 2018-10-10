@@ -29,6 +29,7 @@ module "dcos-master-instances" {
 |------|-------------|:----:|:-----:|:-----:|
 | admin_username | admin username | string | - | yes |
 | allow_stopping_for_update | If true, allows Terraform to stop the instance to update its properties | string | `true` | no |
+| custom_data | User data to be used on these instances (cloud-init) | string | `` | no |
 | dcos_instance_os | Operating system to use. Instead of using your own AMI you could use a provided OS. | string | - | yes |
 | dcos_version | Specifies which DC/OS version instruction to use. Options: 1.9.0, 1.8.8, etc. See dcos_download_path or dcos_version tree for a full list. | string | - | yes |
 | disk_size | disk size | string | - | yes |
@@ -47,7 +48,6 @@ module "dcos-master-instances" {
 | ssh_private_key_filename | Path to the SSH private key | string | `/dev/null` | no |
 | subnet_id | Subnet ID | string | - | yes |
 | tags | Add custom tags to all resources | map | `<map>` | no |
-| user_data | User data to be used on these instances (cloud-init) | string | `` | no |
 
 ## Outputs
 

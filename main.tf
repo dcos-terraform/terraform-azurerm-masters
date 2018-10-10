@@ -46,7 +46,7 @@ module "dcos-master-instances" {
   disk_size                    = "${var.disk_size}"
   resource_group_name          = "${var.resource_group_name}"
   network_security_group_id    = "${var.network_security_group_id}"
-  user_data                    = "${var.user_data}"
+  custom_data                  = "${var.custom_data}"
   admin_username               = "${var.admin_username}"
   public_ssh_key               = "${var.public_ssh_key}"
   tags                         = "${var.tags}"
