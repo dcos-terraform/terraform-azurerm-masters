@@ -17,7 +17,7 @@ variable "name_prefix" {
 }
 
 # Instance Type
-variable "instance_type" {
+variable "vm_size" {
   description = "instance type"
 }
 
