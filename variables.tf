@@ -8,7 +8,7 @@ variable "num_masters" {
 
 # Location (region)
 variable "location" {
-  description = "location"
+  description = "Azure Region"
 }
 
 # Cluster Name
@@ -18,7 +18,7 @@ variable "name_prefix" {
 
 # Instance Type
 variable "vm_size" {
-  description = "instance type"
+  description = "Azure virtual machine size"
 }
 
 # DCOS Version for prereq install
@@ -42,25 +42,25 @@ variable "ssh_private_key_filename" {
 
 # Source image to boot from. We assume the user has already take care of the prereq during this step.
 variable "image" {
-  description = "A storage_image_reference reference."
+  description = "Source image to boot from"
   type        = "map"
   default     = {}
 }
 
 # Disk Type to Leverage. The managed disk type. (optional)
 variable "disk_type" {
-  description = "Disk Type to Leverage."
+  description = "Disk Type to Leverage"
   default     = "Standard_LRS"
 }
 
 # Disk Size in GB
 variable "disk_size" {
-  description = "disk size"
+  description = "Disk Size in GB"
 }
 
 # Resource Group Name
 variable "resource_group_name" {
-  description = "resource group name"
+  description = "Name of the azure resource group"
 }
 
 # Customer Provided Userdata
@@ -71,7 +71,7 @@ variable "custom_data" {
 
 # SSH User
 variable "admin_username" {
-  description = "admin username"
+  description = "SSH User"
 }
 
 # SSH Public Key
@@ -104,19 +104,19 @@ variable "subnet_id" {
 }
 
 variable "network_security_group_id" {
-  description = "network security group id"
+  description = "Security Group Id"
   default     = ""
 }
 
 variable "public_backend_address_pool" {
-  description = "public backend address pool"
+  description = "Public backend address pool"
   type        = "list"
   default     = []
 }
 
 # Private backend address pool
 variable "private_backend_address_pool" {
-  description = "private backend address pool"
+  description = "Private backend address pool"
   type        = "list"
   default     = []
 }
