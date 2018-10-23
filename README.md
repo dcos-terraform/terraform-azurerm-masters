@@ -53,8 +53,8 @@ module "dcos-master-instances" {
 
 | Name | Description |
 |------|-------------|
-| admin_username | admin username |
-| prereq_id | prereq id |
+| admin_username | SSH User |
+| prereq_id | Prereq id used for dependency |
 | private_ips | List of private ip addresses created by this module |
 | public_ips | List of public ip addresses created by this module |
 
