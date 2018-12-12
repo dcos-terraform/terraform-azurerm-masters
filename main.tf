@@ -11,7 +11,7 @@
  *```hcl
  * module "dcos-master-instances" {
  *   source  = "dcos-terraform/masters/azurerm"
- *   version = "~> 0.1"
+ *   version = "~> 0.1.0"
  *
  *   admin_username = "admin"
  *   cluster_name = "production"
