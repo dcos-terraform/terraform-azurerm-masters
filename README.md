@@ -40,8 +40,6 @@ module "dcos-master-instances" {
 | name_prefix | Cluster Name | string | - | yes |
 | network_security_group_id | Security Group Id | string | `` | no |
 | num_masters | Specify the amount of masters. For redundancy you should have at least 3 | string | - | yes |
-| private_backend_address_pool | Private backend address pool | list | `<list>` | no |
-| public_backend_address_pool | Public backend address pool | list | `<list>` | no |
 | resource_group_name | Name of the azure resource group | string | - | yes |
 | ssh_private_key_filename | Path to the SSH private key | string | `/dev/null` | no |
 | ssh_public_key | SSH public key in authorized keys format (e.g. 'ssh-rsa ..') to be used with the instances. Make sure you added this key to your ssh-agent. | string | - | yes |
@@ -54,6 +52,8 @@ module "dcos-master-instances" {
 | Name | Description |
 |------|-------------|
 | admin_username | SSH User |
+| instance_nic_ids | List of instance nic ids created by this module |
+| ip_configuration_names | List of instance nic ids created by this module |
 | prereq_id | Prereq id used for dependency |
 | private_ips | List of private ip addresses created by this module |
 | public_ips | List of public ip addresses created by this module |
