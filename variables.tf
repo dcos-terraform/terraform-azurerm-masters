@@ -107,16 +107,3 @@ variable "network_security_group_id" {
   description = "Security Group Id"
   default     = ""
 }
-
-variable "public_backend_address_pool" {
-  description = "Public backend address pool"
-  type        = "list"
-  default     = []
-}
-
-# Private backend address pool
-variable "private_backend_address_pool" {
-  description = "Private backend address pool"
-  type        = "list"
-  default     = []
-}
