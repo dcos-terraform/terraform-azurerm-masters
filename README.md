@@ -28,10 +28,10 @@ module "dcos-master-instances" {
 |------|-------------|:----:|:-----:|:-----:|
 | admin\_username | SSH User | string | n/a | yes |
 | dcos\_instance\_os | Operating system to use. Instead of using your own AMI you could use a provided OS. | string | n/a | yes |
-| dcos\_version | Specifies which DC/OS version instruction to use. Options: 1.9.0, 1.8.8, etc. See dcos_download_path or dcos_version tree for a full list. | string | n/a | yes |
+| dcos\_version | Specifies which DC/OS version instruction to use. Options: 1.12.3, 1.11.10, etc. See dcos_download_path or dcos_version tree for a full list. | string | n/a | yes |
 | disk\_size | Disk Size in GB | string | n/a | yes |
 | location | Azure Region | string | n/a | yes |
-| name\_prefix | Cluster Name | string | n/a | yes |
+| name\_prefix | Name Prefix | string | n/a | yes |
 | num\_masters | Specify the amount of masters. For redundancy you should have at least 3 | string | n/a | yes |
 | resource\_group\_name | Name of the azure resource group | string | n/a | yes |
 | ssh\_public\_key | SSH public key in authorized keys format (e.g. 'ssh-rsa ..') to be used with the instances. Make sure you added this key to your ssh-agent. | string | n/a | yes |
