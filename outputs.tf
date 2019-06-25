@@ -1,4 +1,4 @@
-output "admin_username" {
+output "os_user" {
   description = "SSH User"
   value       = "${module.dcos-master-instances.admin_username}"
 }
@@ -21,9 +21,4 @@ output "instance_nic_ids" {
 output "ip_configuration_names" {
   description = "List of ip configuration names associated with the instance nic ids"
   value       = ["${module.dcos-master-instances.ip_configuration_names}"]
-}
-
-output "prereq_id" {
-  description = "Prereq id used for dependency"
-  value       = "${module.dcos-master-instances.prereq_id}"
 }
