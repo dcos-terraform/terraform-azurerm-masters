@@ -28,7 +28,7 @@ module "dcos-master-instances" {
 |------|-------------|:----:|:-----:|:-----:|
 | admin\_username | SSH User | string | n/a | yes |
 | dcos\_instance\_os | Operating system to use. Instead of using your own AMI you could use a provided OS. | string | n/a | yes |
-| dcos\_version | Specifies which DC/OS version instruction to use. Options: 1.12.3, 1.11.10, etc. See dcos_download_path or dcos_version tree for a full list. | string | n/a | yes |
+| dcos\_version | Specifies which DC/OS version instruction to use. Options: 1.13.1, 1.12.3, 1.11.10, etc. See dcos_download_path or dcos_version tree for a full list. | string | n/a | yes |
 | disk\_size | Disk Size in GB | string | n/a | yes |
 | location | Azure Region | string | n/a | yes |
 | name\_prefix | Name Prefix | string | n/a | yes |
@@ -50,10 +50,9 @@ module "dcos-master-instances" {
 
 | Name | Description |
 |------|-------------|
-| admin\_username | SSH User |
 | instance\_nic\_ids | List of instance nic ids created by this module |
 | ip\_configuration\_names | List of ip configuration names associated with the instance nic ids |
-| prereq\_id | Prereq id used for dependency |
+| os\_user | The OS user to be used |
 | private\_ips | List of private ip addresses created by this module |
 | public\_ips | List of public ip addresses created by this module |
 
