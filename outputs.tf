@@ -1,5 +1,5 @@
 output "os_user" {
-  description = "SSH User"
+  description = "The OS user to be used"
   value       = "${module.dcos-master-instances.admin_username}"
 }
 
