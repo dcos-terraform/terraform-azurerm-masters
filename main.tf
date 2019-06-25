@@ -36,6 +36,7 @@ module "dcos-master-instances" {
 
   num                       = "${var.num_masters}"
   location                  = "${var.location}"
+  cluster_name              = "${var.cluster_name}"
   name_prefix               = "${var.name_prefix}"
   vm_size                   = "${var.vm_size}"
   dcos_version              = "${var.dcos_version}"

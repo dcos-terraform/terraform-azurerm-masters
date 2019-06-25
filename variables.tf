@@ -2,6 +2,10 @@ variable "num_masters" {
   description = "Specify the amount of masters. For redundancy you should have at least 3"
 }
 
+variable "cluster_name" {
+  description = "Name of the DC/OS cluster"
+}
+
 variable "location" {
   description = "Azure Region"
 }
