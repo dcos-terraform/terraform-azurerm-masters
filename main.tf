@@ -39,7 +39,6 @@ module "dcos-master-instances" {
   cluster_name              = "${var.cluster_name}"
   name_prefix               = "${var.name_prefix}"
   vm_size                   = "${var.vm_size}"
-  dcos_version              = "${var.dcos_version}"
   dcos_instance_os          = "${var.dcos_instance_os}"
   ssh_private_key_filename  = "${var.ssh_private_key_filename}"
   image                     = "${var.image}"
