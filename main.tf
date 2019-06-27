@@ -17,7 +17,7 @@
  *   cluster_name = "production"
  *   subnet_ids = "string-myid"
  *   resource_group_name = "example"
- *   public_ssh_key = "my-ssh-key"
+ *   public_ssh_key = "~/.ssh/id_rsa.pub"
  *
  *   num_masters = "3"
  * }
@@ -48,7 +48,7 @@ module "dcos-master-instances" {
   network_security_group_id = "${var.network_security_group_id}"
   custom_data               = "${var.custom_data}"
   admin_username            = "${var.admin_username}"
-  ssh_public_key            = "${var.ssh_public_key}"
+  ssh_public_key            = "${var.public_ssh_key}"
   tags                      = "${var.tags}"
   hostname_format           = "${var.hostname_format}"
   subnet_id                 = "${var.subnet_id}"
