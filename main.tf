@@ -48,7 +48,7 @@ module "dcos-master-instances" {
   network_security_group_id = "${var.network_security_group_id}"
   custom_data               = "${var.custom_data}"
   admin_username            = "${var.admin_username}"
-  ssh_public_key            = "${var.public_ssh_key}"
+  public_ssh_key            = "${var.public_ssh_key}"
   tags                      = "${var.tags}"
   hostname_format           = "${var.hostname_format}"
   subnet_id                 = "${var.subnet_id}"
