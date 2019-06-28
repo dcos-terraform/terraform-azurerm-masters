@@ -37,6 +37,7 @@ module "dcos-master-instances" {
 | subnet\_id | Subnet ID | string | n/a | yes |
 | vm\_size | Azure virtual machine size | string | n/a | yes |
 | allow\_stopping\_for\_update | If true, allows Terraform to stop the instance to update its properties | string | `"true"` | no |
+| avset\_platform\_fault\_domain\_count | Availabilty set platform fault domain count, differs from location to location | string | `"3"` | no |
 | custom\_data | User data to be used on these instances (cloud-init) | string | `""` | no |
 | disk\_type | Disk Type to Leverage | string | `"Standard_LRS"` | no |
 | hostname\_format | Format the hostname inputs are index+1, region, cluster_name | string | `"master-%[1]d-%[2]s"` | no |
