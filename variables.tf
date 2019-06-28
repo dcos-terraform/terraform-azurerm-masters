@@ -87,3 +87,8 @@ variable "network_security_group_id" {
   description = "Security Group Id"
   default     = ""
 }
+
+variable "avset_platform_fault_domain_count" {
+  description = "Availabilty set platform fault domain count, differs from location to location"
+  default     = 3
+}
