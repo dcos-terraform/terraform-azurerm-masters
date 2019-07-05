@@ -52,6 +52,7 @@ module "dcos-master-instances" {
 | Name | Description |
 |------|-------------|
 | admin\_username | SSH User |
+| hostname\_format | Format the hostname inputs are index+1, region, cluster_name |
 | instance\_nic\_ids | List of instance nic ids created by this module |
 | private\_ips | List of private ip addresses created by this module |
 | public\_ips | List of public ip addresses created by this module |
