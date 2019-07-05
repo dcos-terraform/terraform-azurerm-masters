@@ -17,3 +17,8 @@ output "instance_nic_ids" {
   description = "List of instance nic ids created by this module"
   value       = ["${module.dcos-master-instances.instance_nic_ids}"]
 }
+
+output "hostname_format" {
+  description = "Format the hostname inputs are index+1, region, cluster_name"
+  value       = "${var.hostname_format}"
+}
