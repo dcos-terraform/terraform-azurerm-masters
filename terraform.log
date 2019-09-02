@@ -1,0 +1,123 @@
+2019/09/02 12:22:50 [INFO] Terraform version: 0.11.14 mesosphere 
+2019/09/02 12:22:50 [INFO] Go runtime version: go1.12
+2019/09/02 12:22:50 [INFO] CLI args: []string{"/bin/terraform", "init", "-upgrade"}
+2019/09/02 12:22:50 [DEBUG] Attempting to open CLI config file: /root/.terraformrc
+2019/09/02 12:22:50 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2019/09/02 12:22:50 [INFO] CLI command args: []string{"init", "-upgrade"}
+2019/09/02 12:22:50 [DEBUG] command: loading backend config file: /jenkins/workspace/rm-azurerm-masters_support_0.2.x
+2019/09/02 12:22:50 [DEBUG] matched "dcos-terraform/instance/azurerm" version  for ~> 0.2.0
+2019/09/02 12:22:50 [DEBUG] Service discovery for registry.terraform.io at https://registry.terraform.io/.well-known/terraform.json
+2019/09/02 12:22:50 [DEBUG] fetching module versions from "https://registry.terraform.io/v1/modules/dcos-terraform/instance/azurerm/versions"
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.15" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.2" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.13" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.3" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.20" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.10" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.8" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.14" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.18" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.4" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.1" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.21" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.16" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.12" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.7" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.24" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.5" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.22" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.23" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.25" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.17" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.26" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.19" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.1.0" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.9" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.0" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.11" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.6" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.2.0" for dcos-terraform/instance/azurerm
+2019/09/02 12:22:51 [DEBUG] looking up module location from "https://registry.terraform.io/v1/modules/dcos-terraform/instance/azurerm/0.2.0/download"
+2019/09/02 12:22:51 [DEBUG] found "https://api.github.com/repos/dcos-terraform/terraform-azurerm-instance/tarball/0.2.0?archive=tar.gz" in ".terraform/modules/fdbd8be5a813b2e28d4cd894c329fcb0": true
+2019/09/02 12:22:51 [TRACE] "https://api.github.com/repos/dcos-terraform/terraform-azurerm-instance/tarball/0.2.0?archive=tar.gz" stored in ".terraform/modules/fdbd8be5a813b2e28d4cd894c329fcb0"
+2019/09/02 12:22:51 [INFO] no matching version for "dcos-terraform/tested-oses/azurerm"<~> 0.2.0>, no versions found
+2019/09/02 12:22:51 [DEBUG] matched "dcos-terraform/tested-oses/azurerm" version  for ~> 0.2.0
+2019/09/02 12:22:51 [DEBUG] fetching module versions from "https://registry.terraform.io/v1/modules/dcos-terraform/tested-oses/azurerm/versions"
+2019/09/02 12:22:51 [DEBUG] found available version "0.2.0" for dcos-terraform/tested-oses/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.1.4" for dcos-terraform/tested-oses/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.1.3" for dcos-terraform/tested-oses/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.1.2" for dcos-terraform/tested-oses/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.1.1" for dcos-terraform/tested-oses/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.1.0" for dcos-terraform/tested-oses/azurerm
+2019/09/02 12:22:51 [DEBUG] found available version "0.0.1" for dcos-terraform/tested-oses/azurerm
+2019/09/02 12:22:51 [DEBUG] looking up module location from "https://registry.terraform.io/v1/modules/dcos-terraform/tested-oses/azurerm/0.2.0/download"
+2019/09/02 12:22:52 [DEBUG] found "https://api.github.com/repos/dcos-terraform/terraform-azurerm-tested-oses/tarball/0.2.0?archive=tar.gz" in ".terraform/modules/2f83d9dc6e57a4e8abcab2199deecf13": true
+2019/09/02 12:22:52 [TRACE] "https://api.github.com/repos/dcos-terraform/terraform-azurerm-tested-oses/tarball/0.2.0?archive=tar.gz" stored in ".terraform/modules/2f83d9dc6e57a4e8abcab2199deecf13"
+2019/09/02 12:22:52 [INFO] command: empty backend config, returning nil
+2019/09/02 12:22:52 [DEBUG] command: no data state file found for backend config
+2019/09/02 12:22:52 [DEBUG] New state was assigned lineage "81ddbc2d-0df5-a32d-f3a6-b3fc8cfe43b7"
+2019/09/02 12:22:52 [INFO] command: backend initialized: <nil>
+2019/09/02 12:22:52 [DEBUG] checking for provider in "."
+2019/09/02 12:22:52 [DEBUG] checking for provider in "/bin"
+2019/09/02 12:22:52 [DEBUG] checking for provisioner in "."
+2019/09/02 12:22:52 [DEBUG] checking for provisioner in "/bin"
+2019/09/02 12:22:52 [INFO] Failed to read plugin lock file .terraform/plugins/linux_amd64/lock.json: open .terraform/plugins/linux_amd64/lock.json: no such file or directory
+2019/09/02 12:22:52 [INFO] command: backend <nil> is not enhanced, wrapping in local
+2019/09/02 12:22:52 [DEBUG] found local version "0.2.0" for module dcos-terraform/instance/azurerm
+2019/09/02 12:22:52 [DEBUG] matched "dcos-terraform/instance/azurerm" version 0.2.0 for ~> 0.2.0
+2019/09/02 12:22:52 [DEBUG] found local version "0.2.0" for module dcos-terraform/tested-oses/azurerm
+2019/09/02 12:22:52 [DEBUG] matched "dcos-terraform/tested-oses/azurerm" version 0.2.0 for ~> 0.2.0
+2019/09/02 12:22:52 [DEBUG] checking for provider in "."
+2019/09/02 12:22:52 [DEBUG] checking for provider in "/bin"
+2019/09/02 12:22:52 [DEBUG] plugin requirements: "azurerm"=""
+2019/09/02 12:22:52 [DEBUG] fetching provider info for azurerm version 1.33.1
+2019/09/02 12:22:52 [DEBUG] getting provider "azurerm" version "1.33.1"
+2019/09/02 12:22:52 [DEBUG] plugin cache is disabled, so downloading azurerm 1.33.1 from https://releases.hashicorp.com/terraform-provider-azurerm/1.33.1/terraform-provider-azurerm_1.33.1_linux_amd64.zip?checksum=sha256:7b5597a236e36c8d2ad8f082c78ed5acc4c553c73d85ecfb90d3134d763b3e95
+2019/09/02 12:22:53 [DEBUG] looking for the azurerm 1.33.1 plugin we just installed
+2019/09/02 12:22:53 [DEBUG] checking for provider in ".terraform/plugins/linux_amd64"
+2019/09/02 12:22:53 [DEBUG] found provider "terraform-provider-azurerm_v1.33.1_x4"
+2019/09/02 12:22:53 [DEBUG] all plugins found discovery.PluginMetaSet{discovery.PluginMeta{Name:"azurerm", Version:"1.33.1", Path:"/jenkins/workspace/rm-azurerm-masters_support_0.2.x/.terraform/plugins/linux_amd64/terraform-provider-azurerm_v1.33.1_x4"}:struct {}{}}
+2019/09/02 12:22:53 [DEBUG] filtered plugins discovery.PluginMetaSet{discovery.PluginMeta{Name:"azurerm", Version:"1.33.1", Path:"/jenkins/workspace/rm-azurerm-masters_support_0.2.x/.terraform/plugins/linux_amd64/terraform-provider-azurerm_v1.33.1_x4"}:struct {}{}}
+2019/09/02 12:22:53 [DEBUG] checking for provider in "."
+2019/09/02 12:22:53 [DEBUG] checking for provider in "/bin"
+2019/09/02 12:22:53 [DEBUG] checking for provider in ".terraform/plugins/linux_amd64"
+2019/09/02 12:22:53 [DEBUG] found provider "terraform-provider-azurerm_v1.33.1_x4"
+2019/09/02 12:22:53 [DEBUG] found valid plugin: "azurerm", "1.33.1", "/jenkins/workspace/rm-azurerm-masters_support_0.2.x/.terraform/plugins/linux_amd64/terraform-provider-azurerm_v1.33.1_x4"
+2019/09/02 12:22:54 [DEBUG] checking for provider in ".terraform/plugins/linux_amd64"
+2019/09/02 12:22:54 [DEBUG] found provider "terraform-provider-azurerm_v1.33.1_x4"
+2019/09/02 12:22:54 [DEBUG] plugin: waiting for all plugin processes to complete...
+2019/09/02 12:22:54 [INFO] Terraform version: 0.11.14 mesosphere 
+2019/09/02 12:22:54 [INFO] Go runtime version: go1.12
+2019/09/02 12:22:54 [INFO] CLI args: []string{"/bin/terraform", "validate", "-check-variables=false"}
+2019/09/02 12:22:54 [DEBUG] Attempting to open CLI config file: /root/.terraformrc
+2019/09/02 12:22:54 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2019/09/02 12:22:54 [INFO] CLI command args: []string{"validate", "-check-variables=false"}
+2019/09/02 12:22:54 [DEBUG] plugin: waiting for all plugin processes to complete...
+2019/09/02 12:23:01 [INFO] Terraform version: 0.11.14 mesosphere 
+2019/09/02 12:23:01 [INFO] Go runtime version: go1.12
+2019/09/02 12:23:01 [INFO] CLI args: []string{"/bin/terraform", "fmt", "main.tf"}
+2019/09/02 12:23:01 [DEBUG] Attempting to open CLI config file: /root/.terraformrc
+2019/09/02 12:23:01 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2019/09/02 12:23:01 [INFO] CLI command args: []string{"fmt", "main.tf"}
+2019/09/02 12:23:01 [DEBUG] plugin: waiting for all plugin processes to complete...
+2019/09/02 12:23:01 [INFO] Terraform version: 0.11.14 mesosphere 
+2019/09/02 12:23:01 [INFO] Go runtime version: go1.12
+2019/09/02 12:23:01 [INFO] CLI args: []string{"/bin/terraform", "fmt", "meta.tf"}
+2019/09/02 12:23:01 [DEBUG] Attempting to open CLI config file: /root/.terraformrc
+2019/09/02 12:23:01 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2019/09/02 12:23:01 [INFO] CLI command args: []string{"fmt", "meta.tf"}
+2019/09/02 12:23:01 [DEBUG] plugin: waiting for all plugin processes to complete...
+2019/09/02 12:23:01 [INFO] Terraform version: 0.11.14 mesosphere 
+2019/09/02 12:23:01 [INFO] Go runtime version: go1.12
+2019/09/02 12:23:01 [INFO] CLI args: []string{"/bin/terraform", "fmt", "outputs.tf"}
+2019/09/02 12:23:01 [DEBUG] Attempting to open CLI config file: /root/.terraformrc
+2019/09/02 12:23:01 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2019/09/02 12:23:01 [INFO] CLI command args: []string{"fmt", "outputs.tf"}
+2019/09/02 12:23:01 [DEBUG] plugin: waiting for all plugin processes to complete...
+2019/09/02 12:23:01 [INFO] Terraform version: 0.11.14 mesosphere 
+2019/09/02 12:23:01 [INFO] Go runtime version: go1.12
+2019/09/02 12:23:01 [INFO] CLI args: []string{"/bin/terraform", "fmt", "variables.tf"}
+2019/09/02 12:23:01 [DEBUG] Attempting to open CLI config file: /root/.terraformrc
+2019/09/02 12:23:01 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2019/09/02 12:23:01 [INFO] CLI command args: []string{"fmt", "variables.tf"}
+2019/09/02 12:23:01 [DEBUG] plugin: waiting for all plugin processes to complete...
