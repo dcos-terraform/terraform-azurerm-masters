@@ -29,7 +29,7 @@ provider "azurerm" {
 
 module "dcos-master-instances" {
   source  = "dcos-terraform/instance/azurerm"
-  version = "~> 0.2.0"
+  version = "~> 0.3.0"
 
   providers = {
     azurerm = azurerm
@@ -55,4 +55,3 @@ module "dcos-master-instances" {
   subnet_id                         = var.subnet_id
   avset_platform_fault_domain_count = var.avset_platform_fault_domain_count
 }
-
